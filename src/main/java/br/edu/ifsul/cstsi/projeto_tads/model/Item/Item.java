@@ -1,7 +1,7 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.Orcamento;
+package br.edu.ifsul.cstsi.projeto_tads.model.Item;
 
-
-import br.edu.ifsul.cstsi.projeto_tads.model.ItensOrcamento.ItensOrcamento;
+import br.edu.ifsul.cstsi.projeto_tads.model.ItensSalao.ItensSalao;
+import br.edu.ifsul.cstsi.projeto_tads.model.Orcamento.Orcamento;
 import br.edu.ifsul.cstsi.projeto_tads.model.Reserva.Reserva;
 import br.edu.ifsul.cstsi.projeto_tads.model.Salao.Salao;
 import lombok.AllArgsConstructor;
@@ -13,22 +13,17 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
-@Table(name = "orcamentos")
+@Table(name = "itens")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Orcamento {
+public class Item {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Long id;
     private String nome;
     private String descricao;
-    private BigDecimal valorBase;
-    private BigDecimal valorItens;
-    private BigDecimal valorTotal;
 
-    @ManyToOne
-    @JoinColumn(name = "salao_id", referencedColumnName = "id", nullable = false)
-    private Salao salao;
-
+    @OneToMany(mappedBy="item")
+    private List<ItensSalao> itensSaloes;
 }

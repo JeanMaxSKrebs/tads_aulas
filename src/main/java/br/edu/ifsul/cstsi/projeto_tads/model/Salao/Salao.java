@@ -1,5 +1,7 @@
 package br.edu.ifsul.cstsi.projeto_tads.model.Salao;
 
+import br.edu.ifsul.cstsi.projeto_tads.model.Item.Item;
+import br.edu.ifsul.cstsi.projeto_tads.model.ItensSalao.ItensSalao;
 import br.edu.ifsul.cstsi.projeto_tads.model.Orcamento.Orcamento;
 import br.edu.ifsul.cstsi.projeto_tads.model.Reserva.Reserva;
 import lombok.AllArgsConstructor;
@@ -35,7 +37,9 @@ public class Salao {
     @OneToMany(mappedBy="salao")
     private List<Reserva> reservas;
 
-    @ManyToMany(mappedBy="saloes")
+    @OneToMany(mappedBy="salao")
     private List<Orcamento> orcamentos;
 
+    @OneToMany(mappedBy="salao")
+    private List<ItensSalao> itensSaloes;
 }
