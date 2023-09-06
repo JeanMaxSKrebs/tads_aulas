@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "12b502b5-40bf-4a16-8519-767093e4ebd0",
+		"name": "Clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5659639"
+	},
+	"item": [
+		{
+			"name": "select",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}",
+					"host": [
+						"{{api}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectById",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/1",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectByNome",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/nome/jean",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"nome",
+						"jean"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inserir",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"jean\",\n    \"cpf\": 40506635078,\n    \"idade\": 20,\n    \"telefone\": 51995617421,\n    \"foto_perfil\": null,\n    \"email\": \"jeanskrebs@gmail.com\"    \n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}",
+					"host": [
+						"{{api}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Fest Haus atualizado\",\n    \"cnpj\": 1855743000106,\n    \"endereco\": \"avenida campina 696\",\n    \"cidade\": \"sao leo\",\n    \"descricao\": \"salao de festa\",\n    \"capacidade\": 100,\n    \"logo\": null,\n    \"imagens\": null,\n    \"email\": \"jeanmaxskrebs@gmail.com\"    \n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/1",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluir",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/1",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "127.0.0.1:8080/api/v1/clientes",
+			"type": "string"
+		}
+	]
+}

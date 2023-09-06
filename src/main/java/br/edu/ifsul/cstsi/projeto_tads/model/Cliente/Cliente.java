@@ -9,7 +9,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
 
-@Entity
+@Entity(name = "clientes")
 @Table(name = "clientes")
 @Data
 @NoArgsConstructor
@@ -19,10 +19,10 @@ public class Cliente {
     @Id
     private Long id;
     private String nome;
-    private String cpf;
+    private Long cpf;
     private Integer idade;
     private String email;
-    private String telefone;
+    private Long telefone;
     private String fotoPerfil;
     private Timestamp createdAt;
     private Timestamp updatedAt;

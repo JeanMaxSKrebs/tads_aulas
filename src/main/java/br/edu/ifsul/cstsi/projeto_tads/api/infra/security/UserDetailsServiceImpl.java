@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.tads_aulas.api.infra.security;
+package br.edu.ifsul.cstsi.projeto_tads.api.infra.security;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;

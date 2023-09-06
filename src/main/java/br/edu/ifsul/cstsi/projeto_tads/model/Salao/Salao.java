@@ -12,7 +12,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
 
-@Entity
+@Entity(name = "saloes")
 @Table(name = "saloes")
 @Data
 @NoArgsConstructor

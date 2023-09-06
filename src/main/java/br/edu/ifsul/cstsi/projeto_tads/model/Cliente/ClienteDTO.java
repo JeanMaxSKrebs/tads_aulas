@@ -10,16 +10,16 @@ import java.sql.Timestamp;
 public class ClienteDTO {
     private Long id;
     private String nome;
-    private String cpf;
+    private Long cpf;
     private Integer idade;
     private String email;
-    private String telefone;
+    private Long telefone;
     private String fotoPerfil;
-    private Timestamp createdAt;
-    private Timestamp updatedAt;
+//    private Timestamp createdAt;
+//    private Timestamp updatedAt;
 
-    public static ClienteDTO create(Cliente p){
+    public static ClienteDTO create(Cliente c){
         ModelMapper modelMapper = new ModelMapper();
-        return modelMapper.map(p, ClienteDTO.class);
+        return modelMapper.map(c, ClienteDTO.class);
     }
 }
