@@ -1,6 +1,5 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.Salao;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.Salao;
 
-import br.edu.ifsul.cstsi.projeto_tads.model.Cliente.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

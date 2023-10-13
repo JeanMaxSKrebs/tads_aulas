@@ -1,16 +1,13 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.ItensOrcamento;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.ItensOrcamento;
 
-import br.edu.ifsul.cstsi.projeto_tads.model.Cliente.Cliente;
-import br.edu.ifsul.cstsi.projeto_tads.model.ItensSalao.ItensSalao;
-import br.edu.ifsul.cstsi.projeto_tads.model.Orcamento.Orcamento;
-import br.edu.ifsul.cstsi.projeto_tads.model.Salao.Salao;
+import br.edu.ifsul.cstsi.projeto_tads.api.model.ItensSalao.ItensSalao;
+import br.edu.ifsul.cstsi.projeto_tads.api.model.Orcamento.Orcamento;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.List;
 
 @Entity
 @Table(name = "itens_orcamentos")

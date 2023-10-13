@@ -1,14 +1,14 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.Salao;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.Salao;
 
 
-import br.edu.ifsul.cstsi.projeto_tads.model.Salao.Salao;
-import br.edu.ifsul.cstsi.projeto_tads.model.Salao.SalaoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 

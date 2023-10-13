@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.Cliente;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.Cliente;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

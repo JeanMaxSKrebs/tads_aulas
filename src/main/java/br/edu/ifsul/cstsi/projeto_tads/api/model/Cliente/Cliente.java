@@ -1,6 +1,6 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.Cliente;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.Cliente;
 
-import br.edu.ifsul.cstsi.projeto_tads.model.Reserva.Reserva;
+import br.edu.ifsul.cstsi.projeto_tads.api.model.Reserva.Reserva;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

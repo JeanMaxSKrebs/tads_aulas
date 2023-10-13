@@ -1,9 +1,6 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.Cliente;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.Cliente;
 import lombok.Data;
 import org.modelmapper.ModelMapper;
-
-import java.math.BigDecimal;
-import java.sql.Timestamp;
 
 
 @Data

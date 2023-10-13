@@ -1,10 +1,9 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.Cliente;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.Cliente;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

@@ -1,10 +1,8 @@
-package br.edu.ifsul.cstsi.projeto_tads.model.ItensSalao;
+package br.edu.ifsul.cstsi.projeto_tads.api.model.ItensSalao;
 
-import br.edu.ifsul.cstsi.projeto_tads.model.Cliente.Cliente;
-import br.edu.ifsul.cstsi.projeto_tads.model.Item.Item;
-import br.edu.ifsul.cstsi.projeto_tads.model.ItensOrcamento.ItensOrcamento;
-import br.edu.ifsul.cstsi.projeto_tads.model.Orcamento.Orcamento;
-import br.edu.ifsul.cstsi.projeto_tads.model.Salao.Salao;
+import br.edu.ifsul.cstsi.projeto_tads.api.model.Item.Item;
+import br.edu.ifsul.cstsi.projeto_tads.api.model.ItensOrcamento.ItensOrcamento;
+import br.edu.ifsul.cstsi.projeto_tads.api.model.Salao.Salao;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
