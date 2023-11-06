@@ -4,12 +4,14 @@ package br.edu.ifsul.cstsi.projeto_tads.api.model.Salao;
 import lombok.Data;
 import org.modelmapper.ModelMapper;
 
+import java.sql.Timestamp;
+
 
 @Data
 public class SalaoDTO {
     private Long id;
     private String nome;
-    private Long cnpj;
+    private String cnpj;
     private String endereco;
     private String cidade;
     private String descricao;
@@ -23,6 +25,7 @@ public class SalaoDTO {
 
     public static SalaoDTO create(Salao s){
         ModelMapper modelMapper = new ModelMapper();
+
         return modelMapper.map(s, SalaoDTO.class);
     }
 }

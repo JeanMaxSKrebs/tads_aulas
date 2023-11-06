@@ -68,7 +68,7 @@ public class SalaoService {
             return SalaoDTO.create(db);
         } else {
             return null;
-            //throw new RuntimeException("Não foi possível atualizar o registro");
+//            throw new RuntimeException("Não foi possível atualizar o registro");
         }
     }
 

@@ -6,6 +6,7 @@ import br.edu.ifsul.cstsi.projeto_tads.api.model.Reserva.Reserva;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.modelmapper.ModelMapper;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -29,7 +30,7 @@ public class Salao {
     private String nome;
     @NotBlank(message = "O CNPJ não pode ser nulo ou vazio")
     @Size(min = 14, max = 14 , message = "O CNPJ deve ter 14 digitos")
-    private Long cnpj;
+    private String cnpj;
     private String endereco;
     private String cidade;
     private String descricao;
@@ -52,4 +53,9 @@ public class Salao {
 
     @OneToMany(mappedBy="salao")
     private List<ItensSalao> itensSaloes;
+
+    public static Salao create(SalaoDTO s){
+        ModelMapper modelMapper = new ModelMapper();
+        return modelMapper.map(s, Salao.class);
+    }
 }

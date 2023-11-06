@@ -41,7 +41,8 @@ public class SalaoController {
                 ResponseEntity.ok(saloes);
     }
 
-    @PostMapping //api/v1/saloes
+
+    @PostMapping("/cadastro") //api/v1/saloes/cadastro
     public ResponseEntity<String> insert(@RequestBody Salao salao){
         SalaoDTO c = service.insert(salao);
         URI location = getUri(c.getId());
@@ -64,6 +65,7 @@ public class SalaoController {
                 ResponseEntity.ok().build() :
                 ResponseEntity.notFound().build();
     }
+
 
     //utilitário
     private URI getUri(Long id) {
